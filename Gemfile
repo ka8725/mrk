@@ -20,6 +20,10 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :production do
+  gem 'puma'
+end
+
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
@@ -39,3 +43,5 @@ gem 'jquery-rails'
 gem 'spree', '1.3.2'
 gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '1-3-stable'
 gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
+gem 'capistrano'
+
