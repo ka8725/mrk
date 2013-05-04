@@ -1,4 +1,5 @@
 require 'bundler/capistrano'
+require 'puma/capistrano'
 
 set :keep_releases, 2
 set :application, "mrk"
