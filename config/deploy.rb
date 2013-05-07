@@ -1,5 +1,4 @@
 require 'bundler/capistrano'
-require 'puma/capistrano'
 
 set :keep_releases, 2
 set :application, "mrk"
@@ -18,6 +17,7 @@ set :deploy_via, :checkout
 namespace :deploy do
   desc "Restart Application"
   task :restart do
+    run "touch #{current_path}/tmp/restart.txt"
   end
 end
 

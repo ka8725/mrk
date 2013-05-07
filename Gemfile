@@ -21,10 +21,6 @@ group :assets do
   gem 'turbo-sprockets-rails3'
 end
 
-group :production do
-  gem 'puma'
-end
-
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
