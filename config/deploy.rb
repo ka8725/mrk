@@ -28,7 +28,7 @@ desc 'create symlinks'
 task :symlink_config_files do
   symlinks = {
     "#{shared_path}/config/database.yml" => "#{release_path}/config/database.yml",
-    "#{shared_path}/spree" => "#{release_path}/public/spree"
+    "#{shared_path}/spree" => "#{release_path}/public/"
   }
   run symlinks.map{|from, to| "ln -nfs #{from} #{to}"}.join(" && ")
 end
